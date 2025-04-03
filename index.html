@@ -10,17 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Handjet&family=Oi&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <title>Meteo App</title>
+    <title>Meteo Ap</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -29,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="weather-city">Paris</h1>
 
             <p class="weather-app-details">
               Wednesday 15:03, moderate rain
@@ -61,5 +62,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
