@@ -1,74 +1,86 @@
 body {
-  background-color: aliceblue;
-  font-family: "Roboto", sans-serif;
+  background-color: #d8dbe2;
 }
 
 .weather-app {
-  background-color: rgb(255, 255, 255);
+  background-color: #ec9a29;
   max-width: 600px;
   margin: 50px auto;
   padding: 30px;
   box-shadow: 0 30px 50px rgba(15, 6, 15, 0.08);
   border-radius: 8px;
+  font-family: "Chakra Petch", sans-serif;
+  background-image: 360;
 }
 
 header {
-  border-bottom: 2px solid #b8860a;
+  border-bottom: 3px solid #373f51;
   padding: 0 0 30px 0;
 }
 
 .search-form-input {
-  background-color: darkgoldenrod;
+  background-color: #d8dbe2;
   border: none;
   border-radius: 8px;
   width: 70%;
   padding: 10px;
   font-size: 20px;
-  color: pink;
+  color: #fe6812;
   font-size: 20px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .search-form-button {
-  background-color: darkgoldenrod;
+  background-color: #fe6812;
   border: none;
   border-radius: 8px;
-  width: 20%;
+  width: 28%;
   padding: 11px 20px;
+  padding-right: 30px;
   margin-left: 5px;
   font-size: 18px;
   color: blue;
   font-size: 20px;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.search-form-input:hover {
+  background-color: #373f51;
+  color: white;
 }
 
 main {
   padding: 30px O;
+  font-family: "Chakra Petch", sans-serif;
 }
 .weather-app-data {
   display: flex;
   justify-content: space-between;
 }
 .weather-app-city {
-  font-family: "Bungee Tint", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   margin: 0;
-  font-size: 38px;
+  font-size: 50px;
   line-height: 48px;
+  padding-top: 5px;
 }
 
 .weather-app-details {
   font-size: 16px;
   margin-bottom: 5px;
-  color: blue;
+  color: #373f51;
   line-height: 24px;
   font-weight: 500;
 }
 
 .weather-app-details strong {
-  color: deepskyblue;
+  color: #d8dbe2;
+  padding-bottom: 5px;
 }
 
 .weather-app-temperature-container {
   display: flex;
-  font-family: "Bungee Tint", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .weather-app-icon {
@@ -80,23 +92,26 @@ main {
 }
 .weather-app-temperature {
   font-size: 88px;
-  font-weight: 500;
-  color: darkolivegreen;
+  font-weight: bold;
+  color: #000000;
 }
 .weather-app-unit {
   font-size: 26px;
   margin-top: 15px;
-  color: blueviolet;
+  color: #000000;
+  font-weight: bold;
 }
 footer {
-  border-top: 2px solid #b8860a;
+  border-top: 3px solid #373f51;
   padding: 20px 0 0 0;
   text-align: right;
   font-size: 14px;
-  color: tomato;
+  color: #373f51;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
 }
 
 a:hover {
-  background-color: green;
-  color: white;
+  background-color: #373f51;
+  color: #fe6812;
 }
