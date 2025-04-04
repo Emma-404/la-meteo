@@ -8,6 +8,8 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
+  let currentTemperature = Math.round(temperature);
+  temperatureElement.innerHTML = currentTemperature;
 
   icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
 
@@ -18,6 +20,28 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 
   temperatureElement.innerHTML = Math.round(temperature);
+
+  checkTemperature(currentTemperature);
+}
+
+function checkTemperature(temperature) {
+  if (temperature >= -50 && temperature <= -5) {
+    alert(
+      "uggghh! I thought I walked into a freezer! Don’t worry, I brought my personality to keep it HOT!"
+    );
+  } else if (temperature >= -4 && temperature <= 6) {
+    alert("Caribbean would be nice..");
+  } else if (temperature >= 7 && temperature <= 14) {
+    alert("When does the next episode of Severance come out?");
+  } else if (temperature >= 15 && temperature <= 18) {
+    alert("Okay, seasonal depression is officially gone ");
+  } else if (temperature >= 19 && temperature <= 23) {
+    alert("Perfect weather for an overpriced coffee 🙄 ...");
+  } else if (temperature >= 24 && temperature <= 28) {
+    alert("Just wear SPF !!🫵");
+  } else if (temperature > 28) {
+    alert("Warming up for hell I see!😏");
+  }
 }
 
 function formatDate(date) {
@@ -86,3 +110,5 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Paris");
 displayForecast();
+
+checkTemperature(currentTemperature);
